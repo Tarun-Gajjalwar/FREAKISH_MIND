@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #111111;
+    padding: 0px 30px;
+}
+
+/* nav bar */
+#nav{
+    height:100px;
+    width: 100%;
+    color: azure;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* nav heading */
+#nav h3{
+    font-weight: 500px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* nav nav in center */
+#nav #nav_center{
+    height: 60px;
+    width: 400px;
+    background-color: rgb(29, 27, 27);
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* nav ka a tags */
+#nav_center a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+#nav_center a:hover{
+    text-decoration: underline;
+    color: #CAFE3F;
+
+}
+
+
+/* nav btn */
+#btn{
+    height: 60px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+/* nav button */
+#btn button{
+    color: #fff;
+    background-color: #111111;
+    border-radius: 15px;
+    border: 1px solid #CAFE3F ;
+    padding: 10px 25px;
+}
+
+/* content */
+#content{
+    height: 85%;
+    width: 100%;
+    background-color: #111111;
+    position: relative;
+}
+
+/* content h1 */
+#content h1{
+    color: #fff;
+    font-size: 70px;
+    text-align: center;
+
+    z-index: 1;
+}
+
+/* content img */
+#content .center-img{
+    height: 490px;
+    width: 550px;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0px;
+    left: 32.2%;
+    z-index: 0;
+}
+
+/* content left */
+#content #left{
+    height:300px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #9b8f8f;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+#left img{ 
+    border: 10px solid rgb(21, 21, 21);
+    border-radius: 50%;
+
+}
+
+#animation img{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    transform: rotateZ(-30deg) !important;
+}
+
+#right{
+    height: 500px;
+    width: 250px;
+    position: absolute;
+    left: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#right img{
+    height: 150px;
+    width: 150px;
+    background: #000;
+    border-radius: 50%;
+    animation: rotation 2s infinite alternate;
+}
+
+@keyframes rotation {
+    from {
+    transform: rotate(0deg);
+    }
+    to {
+    transform: rotate(360deg);
+    }
+}   
+
+#right .text{
+    height: 80px;
+    width: 250px;
+    text-align: center;
+    color: #fff;
+}
+
+.text h3{
+    font-size: 45px;
+}
+
+.text p{
+    color: #CAFE3F;
+}
+
+.hr{
+    width: 250px;
+    border-bottom:5px solid #CAFE3F ;
+    border-radius: 15px;
+}
+
+
+/* section */
+section{
+    height: 100;
+    width: 100%;
+    background-color: #000;
+    padding: 50px;
+    position: relative;
+
+}
+
+#anime{
+    position: absolute;
+    top: 10%;
+    left: 25%;
+
+
+}
+
+#anime img{
+    height: 150px;
+    width: 150px;
+
+}
+
+section #nav-2{
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+}
+
+#nav-2 h3{
+    color: #CAFE3F;  
+}
+
+#nav-2 p{
+    text-align: center;
+}
+
+#btns button{
+    padding: 30px 30px;
+    border-radius: 15px;
+    border: 3px solid #CAFE3F;
+
+}
+
+button i{
+    font-size:15px;
+}
+
+.btn-color1{
+    background-color: #111111;
+    color: #fff;
+    margin-left: 5px;
+}
+/* cards */
+
+/* card */
+.card{
+    height: 500px;
+    width: 400px;
+    border-radius: 15px;
+    background-color: #1B1C1E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+    padding: 5px;
+    
+}
+
+.timer-container{
+    position: absolute;
+    top: 40px;
+    left: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+
+.path{
+    height: 450px;
+    width: 350px;
+    border-radius: 15px;
+    background-color: #F96A02;
+    clip-path: polygon(43% 0, 60% 15%, 100% 16%, 100% 70%, 100% 100%, 40% 100%, 40% 88%, 0 88%, 0% 35%, 0 0);
+    position: relative;
+    padding: 5px;
+}
+
+
+.path img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+
+.ether{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap: 15px;
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+    font-size: 20px;
+}
+
+.card .limited{
+    position: static;
+    top: 0px;
+    left: 0px;
+    
+}
+.layout{
+    height: 600px;
+    width: 420px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.layout .limited{
+    position: absolute;
+    left: 0px;
+    top:50px;
+    z-index: 5;
+}
+
+
+#multi-cards{
+    height: 75%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.monkey3{
+    background-color: #8C01FA;
+}
+
+.monkey2{
+    background-color: #D5F903;
+}
+
+.layout .button{
+    height: 100px;
+    width: 100%;
+
+}
+
+.button button{
+    padding: 20px 50px;
+    color: white;
+    border-radius: 15px;
+    background-color: #111111;
+    position: absolute;
+    bottom: 0px;
+    left: 35%;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+#bt1{
+    box-shadow:  5px 10px 10px #F96A02;
+
+}
+#bt2{
+    box-shadow:  5px 10px 10px #D5F903;
+
+}
+#bt3{
+    box-shadow:  5px 10px 10px #8C01FA;
+
+}
+
+
+#foot{
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    color: #CAFE3F;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
